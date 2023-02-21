@@ -1,12 +1,12 @@
 function(set_compiler_warnings_strict)
     set(STRICT_WARNGINS
-        -Wfatal-errors 
-        -Wall 
-        -Wextra 
+        -Wfatal-errors
+        -Wall
+        -Wextra
         -Wnon-virtual-dtor # warn the user if a class with virtual functions 
                            # has a non-virtual destructor.
         -Wshadow # warn the user if a variable declaration shadows one from a parent context
-        -pedantic 
+        -pedantic
         -Wdouble-promotion # warn if float is implicit promoted to double
         -Wconversion # warn on type conversions that may lose data
         -Wsign-conversion # warn on sign conversions
