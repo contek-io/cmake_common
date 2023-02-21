@@ -20,7 +20,9 @@ function(set_compiler_warnings_strict)
 endfunction()
 
 function(set_compiler_warnings_relax)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} 
-    -Wfatal-errors 
-    -Wall" PARENT_SCOPE)
+    set(RELAX_WARNGINS
+        -Wfatal-errors
+        -Wall
+        )
+    add_compile_options(${RELAX_WARNGINS})
 endfunction()
