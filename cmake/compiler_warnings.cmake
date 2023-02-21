@@ -16,7 +16,7 @@ function(set_compiler_warnings_strict)
         -Wcast-align # warn for potential performance problem casts
         -Wold-style-cast # warn for c-style casts
         )
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${STRICT_WARNGINS}" PARENT_SCOPE)
+    add_compile_options(${STRICT_WARNGINS})
 endfunction()
 
 function(set_compiler_warnings_relax)
