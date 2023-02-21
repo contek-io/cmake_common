@@ -16,11 +16,11 @@ function(set_compiler_warnings_strict)
         -Wcast-align # warn for potential performance problem casts
         -Wold-style-cast # warn for c-style casts
         )
-    set(CMKAE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${STRICT_WARNGINS}" PARENT_SCOPE)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${STRICT_WARNGINS}" PARENT_SCOPE)
 endfunction()
 
 function(set_compiler_warnings_relax)
-    set(CMKAE_CXX_FLAGS "${CMAKE_CXX_FLAGS} 
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} 
     -Wfatal-errors 
     -Wall" PARENT_SCOPE)
 endfunction()
